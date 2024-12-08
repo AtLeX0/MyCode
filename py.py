@@ -1,41 +1,22 @@
-def add(x, y):
-    return x + y
+# Правила именования переменных в Python
 
-def subtract(x, y):
-    return x - y
+# Правильно:
+my_variable = 10          # Имена могут содержать буквы, цифры и символы подчеркивания
+user_name = "Alice"       # Имена должны быть понятными и описательными
+total_price = 99.99       # Используйте snake_case для имен переменных
 
-def multiply(x, y):
-    return x * y
+# Неправильно:
+1st_variable = 5          # Нельзя начинать с цифры
+total-price = 20          # Нельзя использовать символы, кроме подчеркивания
+class = "Math"            # Нельзя использовать зарезервированные слова
 
-def divide(x, y):
-    if y == 0:
-        return "Ошибка! Деление на ноль."
-    return x / y
+# Константы (правильно):
+MAX_VALUE = 100           # Константы пишутся в UPPER_CASE
 
-print("Выберите операцию:")
-print("1. Сложение")
-print("2. Вычитание")
-print("3. Умножение")
-print("4. Деление")
+# Примеры использования:
+x = 5                      # Используйте более описательные имена, если это не временная переменная
 
-while True:
-    choice = input("Введите номер операции (1/2/3/4): ")
-
-    if choice in ['1', '2', '3', '4']:
-        num1 = float(input("Введите первое число: "))
-        num2 = float(input("Введите второе число: "))
-
-        if choice == '1':
-            print(f"{num1} + {num2} = {add(num1, num2)}")
-        elif choice == '2':
-            print(f"{num1} - {num2} = {subtract(num1, num2)}")
-        elif choice == '3':
-            print(f"{num1} * {num2} = {multiply(num1, num2)}")
-        elif choice == '4':
-            print(f"{num1} / {num2} = {divide(num1, num2)}")
-    else:
-        print("Неверный ввод. Пожалуйста, выберите номер операции от 1 до 4.")
-
-    next_calculation = input("Хотите выполнить еще один расчет? (да/нет): ")
-    if next_calculation.lower() != 'да':
-        break
+print("Используем правильные имена переменных в Python")
+print("Используем snake_case для имен переменных")
+print("Используем UPPER_CASE для констант")
+print("Используем более описательные имена для переменных")
