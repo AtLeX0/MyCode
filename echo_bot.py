@@ -5,10 +5,6 @@
 """
 
 import telebot
-
-# Токен бота
-API_TOKEN = "5246338966:AAH5JQuROxsUd4BxHWj-aQH46mzVBlNSpiE"
-
 # Создаем бота
 bot = telebot.TeleBot(API_TOKEN)
 
